@@ -9,7 +9,6 @@ Router.map(function() {
   this.route('friends', function(){ //generate friends/index but it doesnt exist in the route
     this.route('new');
   });
-
 });
 
 export default Router;
