@@ -1,7 +1,7 @@
 //import DS from 'ember-data';
 import ActiveModelAdapter from 'active-model-adapter';
 export default ActiveModelAdapter.extend({
-    namespace:'api'
+    namespace:'api/v2'
 
 });
 /*export default DS.RESTAdapter.extend({
