@@ -1,0 +1,12 @@
+<p> Friends list </p>
+<ul>
+{{#each model as |friend|}}
+    <li>
+        {{link-to friend.fullName 'friends.show' friend}}
+        <!-- {{#link-to 'friends.show' friend}} -->
+            <!-- {{friend.id}} - {{friend.firstName}} {{friend.lastName}} -->
+        <!-- {{/link-to}} -->
+    </li>
+
+{{/each}}
+</ul>

@@ -1,10 +1,9 @@
-// import Ember from 'ember';
 import FriendsBaseController from './base';
 
 export default FriendsBaseController.extend({
-    actions:{
-        close: function(){
-            this.transitionToRoute('friends.index');
+    actions: {
+        cancel() {
+            this.transitionToRoute('friends.show', this.get('model'));
             return false;
         }
     }
